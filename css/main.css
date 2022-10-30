@@ -1,0 +1,274 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+/*
+    Main content
+*/
+
+article figure.main_content {
+    background-image: url("../static/images/main_background_image.webp");
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+article figure.main_content div div a {
+    display: inline-block;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+article figure.main_content figcaption {
+    position: absolute;
+    bottom: 2%;
+    right: 1.5%;
+    color: white;
+    opacity: 70%;
+}
+
+article figure.main_content figcaption a {
+    color: white;
+}
+
+article figure.main_content h1 {
+    font-size: 3rem;
+    color: white;
+}
+
+article figure.main_content h2 {
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+article figure.main_content div a.main_content__main_href {
+    color: white;
+    margin-top: 1rem;
+    text-decoration: none;
+    padding: 0.5rem;
+    background: red;
+    border-radius: 10px;
+}
+
+article figure.main_content div > a {
+    min-width: 160px;
+    color: red;
+    margin-top: 1rem;
+    text-decoration: none;
+    padding: 0.5rem;
+    background: white;
+    border-radius: 10px;
+}
+
+/*
+    Header
+*/
+
+header {
+    display: flex;
+    padding: 2rem;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+    color: #141425;
+    display: block;
+}
+
+header button {
+    display: none;
+}
+
+@media screen and (max-width: 690px) {
+    header {
+        flex-direction: column;
+        align-items: unset;
+        padding: 1rem;
+    }
+    header a {
+        display: none;
+    }
+    header button {
+        width: 36px;
+        display: block;
+        background: none;
+        border: none;
+        font-size: 200%;
+        float: left;
+    }
+}
+
+/*
+    The most important one
+*/
+
+article#Главное {
+    padding: 1rem;
+}
+
+article#Главное div {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0 auto;
+}
+
+article#Главное ul {
+    list-style-type: none;
+}
+
+article#Главное h2 {
+    margin-top: 1rem;
+    text-align: center;
+    color: green;
+}
+
+article#Главное h3 {
+    text-align: center;
+}
+
+article#Главное h2+p {
+    text-align: center;
+    color: red;
+    margin-bottom: 1rem;
+}
+
+article#Главное article {
+    padding: 1rem;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 716px) {
+    article#Главное article {
+        width: 90%;
+    }
+}
+
+article#Главное article * {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+article#Главное article ul {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+    About us section
+*/
+
+article#О\ Нас {
+    margin-top: 2rem;
+    height: 75vh;
+    text-align: center;
+}
+
+article#О\ Нас ul {
+    margin-top: 1rem;
+    list-style-type: none;
+}
+
+article#О\ Нас ul li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+#О\ Нас > article:nth-child(1) > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+@media screen and (max-width: 1068px) {
+    #О\ Нас > article:nth-child(1) > div {
+        gap: 0;
+    }
+    #О\ Нас > article:nth-child(1) > div div img {
+        display: none;
+    }
+}
+
+article#О\ Нас div img {
+    border-radius: 50%;
+}
+
+article#О\ Нас div p {
+    line-height: 1.4;
+    margin-top: 1rem;
+}
+
+/*
+    Useful links section
+*/
+article#Полезные\ ссылки {
+    text-align: center;
+    padding: 1rem;
+}
+
+article#Полезные\ ссылки h2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+article#Полезные\ ссылки > div:nth-child(2) {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 2rem;
+    border: 1px solid black;
+    border-radius: 12px;
+}
+
+article#Полезные\ ссылки > div.long-telegram {
+    margin: 1rem auto 0 auto;
+    padding: 0.5rem;
+    max-width: 600px;
+    background-color: #2AABEE;
+    color: white;
+    border-radius: 12px;
+}
+
+/*
+    Footer
+*/
+
+footer {
+    display: flex;
+    padding: 1.5rem;
+    align-items: center;
+    /*justify-content: center;*/
+    max-width: 1200px;
+    justify-content: space-around;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+footer > div.long-telegram {
+    padding: 0.5rem;
+    max-height: 24px;
+    max-width: 600px;
+    background-color: #2AABEE;
+    color: white;
+    border-radius: 12px;
+}
